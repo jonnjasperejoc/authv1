@@ -1,0 +1,13 @@
+include includes/header.pug    
+#content.row
+	.col-md-3
+	.col-md-6
+		.jumbotron
+			h1 Contact Us
+			p.lead
+				| Lorem ipsum dolor sit amet, odio philosophia no ius, erant dolorum iudicabit est ad, ius posse atomorum id. Sed ad quodsi constituto comprehensam, vel in quaerendum delicatissimi necessitatibus. Mel ludus docendi at. Brute facilisi volutpat quo no, pro consul graeci propriae at, nec et stet aliquam admodum.
+			if !currentUser
+				p.lead
+					a.btn.btn-primary.btn-lg(href='#', role='button') Get in touch
+	.col-md-3
+include includes/footer.pug  

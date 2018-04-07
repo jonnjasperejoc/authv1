@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Bookworm | #{title}
+    link(rel='stylesheet', type='text/css', href='css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+  body
+    header
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-primary
+        a.navbar-brand(href='/') Bookworm
+        #navbarColor01.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            if !currentUser
+              li.nav-item.active
+                a.nav-link(href='register')
+                  | Sign up 
+                  span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='about-us') About
+            li.nav-item
+              a.nav-link(href='contact-us') Contact
+            li.nav-item
+              a.nav-link(href='profile') My Profile
+          if !currentUser
+            a.btn.btn-secondary.my-2.my-sm-0(href='login') Login
+          else
+            a.btn.btn-secondary.my-2.my-sm-0(href='logout') Logout

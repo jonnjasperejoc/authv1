@@ -1,0 +1,26 @@
+include includes/header.pug    
+#content.row
+	.col-md-4
+	.col-md-4
+		.jumbotron
+			h3 Sign Up
+			form(method="POST", action="/register")
+				fieldset
+					.form-group
+						label Name:
+						input.form-control(name='name', type='text', placeholder='Name')
+					.form-group
+						label Email:
+						input.form-control(name='email', type='email', placeholder='Email')
+					.form-group
+						label Favorite Book:
+						input.form-control(name='favoriteBook', type='text', placeholder='Favorite Book')
+					.form-group
+						label Password:
+						input.form-control(name='password', type='password', placeholder='Password')
+					.form-group
+						label Confirm Password:
+						input.form-control(name='confirmPassword', type='password', placeholder='Confirm Password')
+					button.btn.btn-primary(type='submit') Submit
+	.col-md-4
+include includes/footer.pug

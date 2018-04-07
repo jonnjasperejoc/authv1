@@ -1,0 +1,12 @@
+include includes/header.pug    
+#content.row
+  .col-md-3
+  .col-md-6
+    .jumbotron
+      h1.text-center Read & Share Books
+      p.text-center Choose from our large collection of paid and free books!
+      if !currentUser
+        p.lead.text-center
+          a.btn.btn-primary.btn-lg(href='register', role='button') Get Started for FREE
+  .col-md-3
+include includes/footer.pug  

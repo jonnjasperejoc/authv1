@@ -1,0 +1,5 @@
+body {background-image: url("../img/books2.jpg");background-size: cover;background-attachment: fixed;}
+#content{margin-top: 50px;}
+.jumbotron {padding: 2rem 2rem;}
+.row {margin-right: 0;margin-left: 0;}
+.alert {text-align: center;}
