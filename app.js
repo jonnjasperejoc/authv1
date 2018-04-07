@@ -24,8 +24,8 @@ app.use(function (req, res, next) {
 	next();
 });
 // mongodb connection
-mongoose.connect("mongodb://127.0.0.1:27017/bookworm");
-//mongoose.connect("mongodb://heroku_359jx6kp:heroku_359jx6kp@ds237409.mlab.com:37409/heroku_359jx6kp");
+//mongoose.connect("mongodb://127.0.0.1:27017/bookworm");
+mongoose.connect("mongodb://heroku_d2t99s78:heroku_d2t99s78@ds059215.mlab.com:59215/heroku_d2t99s78");
 
 var db = mongoose.connection;
 // mongo error
